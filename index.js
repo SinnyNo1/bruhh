@@ -49,7 +49,7 @@ app.listen(port, () => {
 
 // WEBSOCKET \\ 
 const WebSocketServer = require('ws')
-const wss = new WebSocketServer.Server({ port: 8888 })
+const wss = new WebSocketServer.Server({ port: 8000 })
 
 wss.on('connection', async (client,req) => {
     client.on('message', async (data) => {
